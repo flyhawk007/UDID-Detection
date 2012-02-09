@@ -4,7 +4,7 @@ class IosController < ApplicationController
 
   def ios
       application_host = "#{local_ip}:#{ request.port }" if Rails.env == "development"
-      application_host = request.hostname if Rails.env != "development"
+      application_host = request.host if Rails.env != "development"
 
       content = open( Rails.root.join("public", "basic.mobileconfig") ).read
       token = SecureRandom.hex(16) 
