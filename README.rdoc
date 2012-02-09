@@ -6,7 +6,7 @@ web frameworks, i hope you like it.
 
 You can test the online version at:
 
-http://udid-detection.heroku.com
+http://udid.heroku.com
 
 feel free to fork and send me any comments to:
 
